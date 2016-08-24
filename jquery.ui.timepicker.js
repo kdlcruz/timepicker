@@ -375,7 +375,7 @@
 
 
             // position with the ui position utility, if loaded
-            if ( ( ! inst.inline )  && ( typeof $.ui.position == 'object' ) ) {
+            if ( ( ! inst.inline )  && ( $.ui && typeof $.ui.position == 'object' ) ) {
                 inst.tpDiv.position({
                     of: inst.input,
                     my: $.timepicker._get( inst, 'myPosition' ),
